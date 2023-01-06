@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.0.1/192.168.1.99/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.5/192.168.199.1/g' package/base-files/files/bin/config_generate
 # sed -i 's/192.168.1.5/192.168.199.1/g' package/base-files/files/bin/config_generate
 # Add luci-app-ssr-plus
 pushd package/lean
