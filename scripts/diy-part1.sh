@@ -17,10 +17,11 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCITRACK' feeds.conf.default
 
+# del  lean default argon theme
+rm -rf package/lean/luci-theme-argon
 # Add luci-theme-argon
-git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
-rm -rf ../lean/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
 # Svn checkout packages from immortalwrt's repository
-git clone --depth=1 https://github.com/immortalwrt/packages -b openwrt-18.06 packages
-git clone --depth=1 https://github.com/immortalwrt/luci -b openwrt-18.06 luci
+#git clone --depth=1 https://github.com/immortalwrt/packages -b openwrt-18.06 packages
+#git clone --depth=1 https://github.com/immortalwrt/luci -b openwrt-18.06 luci
