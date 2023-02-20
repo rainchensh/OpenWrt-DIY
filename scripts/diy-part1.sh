@@ -8,22 +8,10 @@
 # https://github.com/P3TERX/Actions-OpenWrt
 # File name: diy-part1.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
-#
 
-# Uncomment a feed source
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-
-# Add feed sources
-sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCITRACK' feeds.conf.default
-
-# del  lean default argon theme
-rm -rf package/lean/luci-theme-argon
-# Add luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 #update golang 19.x (Fix build for openwrt-21.02/22.03 branches)
 rm -rf feeds/packages/lang/golang
-svn export https://github.com/sbwml/packages_lang_golang/branches/19.x feeds/packages/lang/golang
+svn export https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
 # Svn checkout packages from immortalwrt's repository
 #git clone --depth=1 https://github.com/immortalwrt/packages -b openwrt-18.06 packages
 #git clone --depth=1 https://github.com/immortalwrt/luci -b openwrt-18.06 luci
