@@ -14,6 +14,7 @@
 # sed -i 's/192.168.1.5/192.168.199.1/g' package/base-files/files/bin/config_generate
 
 # Add luci-app-ssr-plus
+mkdir package/lean
 pushd package/lean
 git clone --depth=1 https://github.com/fw876/helloworld
 git clone --depth=1 https://github.com/sbwml/luci-app-alist
