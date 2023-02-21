@@ -17,8 +17,8 @@
 mkdir package/lean
 pushd package/lean
 git clone --depth=1 https://github.com/fw876/helloworld
-git clone --depth=1 https://github.com/sbwml/luci-app-alist
 popd
 #update golang 19.x (Fix build for openwrt-21.02/22.03 branches)
 rm -rf feeds/packages/lang/golang
-svn export https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
+svn export https://github.com/sbwml/packages_lang_golang/branches/19.x feeds/packages/lang/golang
+git clone https://github.com/sbwml/luci-app-alist package/alist
