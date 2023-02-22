@@ -8,8 +8,6 @@
 #sed -i 's/192.168.1.5/192.168.199.1/g' package/base-files/files/bin/config_generate
 git clone https://github.com/ZeaKyX/speedtest-web package/speedtest-web
 git clone https://github.com/sivel/speedtest-cli.git package/speedtest-cl
-mkdir package/libs/libaio
-svn export https://github.com/openwrt/packages/branches/openwrt-21.02/libs/libaio packages/libs/libaio
 # Clone community packages to package/community
 mkdir package/community
 pushd package/community
