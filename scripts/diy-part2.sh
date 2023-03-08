@@ -7,8 +7,9 @@
 # Modify default IP
 #sed -i 's/192.168.1.5/192.168.199.1/g' package/base-files/files/bin/config_generate
 #add sirpdboy's luci-app-netspeedtest
-git clone https://github.com/ZeaKyX/speedtest-web package/speedtest-web
-git clone https://github.com/sivel/speedtest-cli.git package/speedtest-cl
+#git clone https://github.com/ZeaKyX/speedtest-web package/speedtest-web
+#git clone https://github.com/sivel/speedtest-cli.git package/speedtest-cl
+git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
 # Clone community packages to package/community
 mkdir package/community
 pushd package/community
