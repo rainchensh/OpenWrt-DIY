@@ -10,6 +10,7 @@
 #git clone https://github.com/ZeaKyX/speedtest-web package/speedtest-web
 #git clone https://github.com/sivel/speedtest-cli.git package/speedtest-cl
 git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
+git clone https://github.com/msylgj/luci-app-tencentddns.git package/luci-app-tencentddns
 # Clone community packages to package/community
 mkdir package/community
 pushd package/community
