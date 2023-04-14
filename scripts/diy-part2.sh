@@ -4,11 +4,11 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# Modify default IP
-#sed -i 's/192.168.1.5/192.168.199.1/g' package/base-files/files/bin/config_generate
+# add sbwml/alist
+rm -rf feeds/packages/lang/golang
+svn export https://github.com/sbwml/packages_lang_golang/branches/19.x feeds/packages/lang/golang
+git clone https://github.com/sbwml/luci-app-alist package/alist
 #add sirpdboy's luci-app-netspeedtest
-#git clone https://github.com/ZeaKyX/speedtest-web package/speedtest-web
-#git clone https://github.com/sivel/speedtest-cli.git package/speedtest-cl
 git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
 git clone https://github.com/msylgj/luci-app-tencentddns.git package/luci-app-tencentddns
 # Clone community packages to package/community
