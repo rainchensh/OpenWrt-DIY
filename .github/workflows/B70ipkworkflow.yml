@@ -97,6 +97,7 @@ jobs:
         make -j$(nproc) || make -j1 || make -j1 V=s
         rm -rf ./bin/packages
         # make package/netspeedtest/luci-app-netspeedtest/compile V=s
+        #make package/alist/luci-app-alist/compile V=s
         make package/aria2/luci-app-aria2/compile V=s
         make package/index
         echo "status=success" >> $GITHUB_OUTPUT
