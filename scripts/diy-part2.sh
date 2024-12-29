@@ -7,7 +7,7 @@
 # add sbwml/alist
 # rm -rf feeds/packages/lang/golang
 # svn export https://github.com/sbwml/packages_lang_golang/branches/19.x feeds/packages/lang/golang
-git clone https://github.com/sbwml/luci-app-alist package/alist
+#git clone https://github.com/sbwml/luci-app-alist package/alist
 #add sirpdboy's luci-app-netspeedtest
 git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
 git clone https://github.com/msylgj/luci-app-tencentddns.git package/luci-app-tencentddns
@@ -26,9 +26,9 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash
 
 # Add luci-app-dockerman
-rm -rf ../lean/luci-app-docker
-git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
-git clone --depth=1 https://github.com/lisaac/luci-lib-docker
+#rm -rf ../lean/luci-app-docker
+#git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
+#git clone --depth=1 https://github.com/lisaac/luci-lib-docker
 
 popd
 
