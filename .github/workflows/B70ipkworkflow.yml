@@ -98,6 +98,8 @@ jobs:
         rm -rf ./bin/packages
         # make package/netspeedtest/luci-app-netspeedtest/compile V=s
         #make package/alist/luci-app-alist/compile V=s
+        make package/kmod-input-core/compile V=s
+        make package/kmod-sound-core/compile V=s
         make package/feeds/packages/minidlna/compile V=s
         echo "status=success" >> $GITHUB_OUTPUT
         grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' > DEVICE_NAME
