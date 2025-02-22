@@ -65,8 +65,9 @@ jobs:
       run: cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a
-           ./scripts/feeds install kmod-input-core
+      run: |
+        cd openwrt && ./scripts/feeds install -a
+        ./scripts/feeds install kmod-input-core
 
     - name: Load custom configuration
       run: |
