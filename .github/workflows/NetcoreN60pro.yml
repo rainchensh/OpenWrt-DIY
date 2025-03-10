@@ -21,8 +21,8 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: openwrt-21.02
+  REPO_URL: https://github.com/immortalwrt-collections/lean-lede
+  REPO_BRANCH: lede
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/ARM/netcoreN60.config
   DIY_P1_SH: scripts/diy-part1.sh
